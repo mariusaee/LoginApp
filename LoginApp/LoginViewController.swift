@@ -12,6 +12,10 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        usernameTextField.text = ""
+    }
+    
     @IBAction func forgotUsernamePressed() {
         showAlert(with: "Here is your username:", and: "Username")
     }
@@ -27,7 +31,7 @@ class LoginViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = usernameTextField.text
+        welcomeVC.username = usernameTextField.text
     }
 }
 
