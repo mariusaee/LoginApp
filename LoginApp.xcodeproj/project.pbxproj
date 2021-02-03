@@ -13,6 +13,8 @@
 		29A2EBD825CAE5B1004B01A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A2EBD625CAE5B1004B01A6 /* Main.storyboard */; };
 		29A2EBDA25CAE5B4004B01A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A2EBD925CAE5B4004B01A6 /* Assets.xcassets */; };
 		29A2EBDD25CAE5B4004B01A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A2EBDB25CAE5B4004B01A6 /* LaunchScreen.storyboard */; };
+		29A2EBF525CAE97C004B01A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2EBF425CAE97C004B01A6 /* LoginViewController.swift */; };
+		29A2EBF825CAE98C004B01A6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2EBF725CAE98C004B01A6 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		29A2EBD925CAE5B4004B01A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A2EBDC25CAE5B4004B01A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29A2EBDE25CAE5B4004B01A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A2EBF425CAE97C004B01A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		29A2EBF725CAE98C004B01A6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				29A2EBD025CAE5B1004B01A6 /* AppDelegate.swift */,
 				29A2EBD225CAE5B1004B01A6 /* SceneDelegate.swift */,
+				29A2EBF425CAE97C004B01A6 /* LoginViewController.swift */,
+				29A2EBF725CAE98C004B01A6 /* WelcomeViewController.swift */,
 				29A2EBD425CAE5B1004B01A6 /* ViewController.swift */,
 				29A2EBD625CAE5B1004B01A6 /* Main.storyboard */,
 				29A2EBD925CAE5B4004B01A6 /* Assets.xcassets */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A2EBF525CAE97C004B01A6 /* LoginViewController.swift in Sources */,
+				29A2EBF825CAE98C004B01A6 /* WelcomeViewController.swift in Sources */,
 				29A2EBD525CAE5B1004B01A6 /* ViewController.swift in Sources */,
 				29A2EBD125CAE5B1004B01A6 /* AppDelegate.swift in Sources */,
 				29A2EBD325CAE5B1004B01A6 /* SceneDelegate.swift in Sources */,
