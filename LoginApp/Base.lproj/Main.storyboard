@@ -41,6 +41,9 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="48"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Log in"/>
+                                                <connections>
+                                                    <segue destination="6uP-V2-cP9" kind="show" id="DTU-08-WbH"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="vjq-om-UNH" userLabel="MiniButtons Stack View">
                                                 <rect key="frame" x="0.0" y="70" width="330" height="28"/>
@@ -81,11 +84,34 @@
             <objects>
                 <viewController id="6uP-V2-cP9" customClass="WelcomeViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sme-Pg-dmv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGc-1i-UmK">
+                                <rect key="frame" x="42" y="150" width="330" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCL-79-s4A">
+                                <rect key="frame" x="163.5" y="666" width="87" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fe5-Za-u4U"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="hGc-1i-UmK" firstAttribute="top" secondItem="fe5-Za-u4U" secondAttribute="top" constant="150" id="L40-iG-OrF"/>
+                            <constraint firstItem="hGc-1i-UmK" firstAttribute="leading" secondItem="fe5-Za-u4U" secondAttribute="leading" constant="42" id="LBZ-0a-pPX"/>
+                            <constraint firstItem="fe5-Za-u4U" firstAttribute="bottom" secondItem="nCL-79-s4A" secondAttribute="bottom" constant="100" id="OtU-6g-TYk"/>
+                            <constraint firstItem="nCL-79-s4A" firstAttribute="centerX" secondItem="sme-Pg-dmv" secondAttribute="centerX" id="Y1s-dV-rU0"/>
+                            <constraint firstItem="fe5-Za-u4U" firstAttribute="trailing" secondItem="hGc-1i-UmK" secondAttribute="trailing" constant="42" id="hRj-CD-3EQ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tMz-3S-5nS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pk2-IY-TEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,11 +119,17 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
