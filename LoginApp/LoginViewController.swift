@@ -8,7 +8,9 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
+    
     
     @IBAction func forgotUsernamePressed() {
         showAlert(with: "Here is your username:", and: "Username")
@@ -18,16 +20,21 @@ class LoginViewController: UIViewController {
         showAlert(with: "Here is your password:", and: "Password")
     }
     
+    @IBAction func logInPressed() {
+//        showAlert(with: "Failed", and: "Wrong Username or Password")
+//        self.passwordTextField.text = ""
+    }
+    
+    
 }
 
 // MARK: - Alert Controller
 extension LoginViewController {
     private func showAlert(with title: String, and message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            self.passwordTextField.text = ""
-        }
+        let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
 }

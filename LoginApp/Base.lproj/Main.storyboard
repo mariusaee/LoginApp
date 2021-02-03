@@ -45,6 +45,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Log in"/>
                                                 <connections>
+                                                    <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="XOz-I4-D6H"/>
                                                     <segue destination="6uP-V2-cP9" kind="show" id="DTU-08-WbH"/>
                                                 </connections>
                                             </button>
@@ -85,6 +86,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="FCn-Nb-ch7" id="yQ5-JK-xCs"/>
+                        <outlet property="usernameTextField" destination="E01-Hd-zPu" id="q2Y-1A-C7A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
