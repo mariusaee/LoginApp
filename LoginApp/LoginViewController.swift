@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
         usernameTextField.text = ""
+        passwordTextField.text = ""
     }
     
     @IBAction func forgotUsernamePressed() {
