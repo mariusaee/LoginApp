@@ -99,6 +99,9 @@
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" systemColor="systemPinkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="logOutButtonPressed" destination="6uP-V2-cP9" eventType="touchUpInside" id="dRH-gD-eoy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fe5-Za-u4U"/>
