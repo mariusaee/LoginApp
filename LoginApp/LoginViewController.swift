@@ -15,15 +15,24 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func forgotUsernamePressed() {
+        showAlert(with: "Here is your username:", and: "Username")
     }
-    */
+    
+    @IBAction func forgotPasswordPressed() {
+        showAlert(with: "Here is your password:", and: "Password")
+    }
+    
+}
 
+// MARK: - Alert Controller
+extension LoginViewController {
+    private func showAlert(with title: String, and message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+//            self.textField.text = ""
+        }
+        alert.addAction(okAction)
+        present(alert, animated: true)
+    }
 }

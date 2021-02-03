@@ -52,11 +52,17 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="112" height="28"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <state key="normal" title="Forgot Username?"/>
+                                                        <connections>
+                                                            <action selector="forgotUsernamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qpz-5D-knE"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrH-4h-9VQ">
                                                         <rect key="frame" x="164" y="0.0" width="166" height="28"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <state key="normal" title="Forgot Password?"/>
+                                                        <connections>
+                                                            <action selector="forgotPasswordPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3V-QZ-67V"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
