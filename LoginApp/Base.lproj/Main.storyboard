@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="BOZ-Ka-0PF" userLabel="All Stack View">
-                                <rect key="frame" x="42" y="335" width="330" height="226"/>
+                                <rect key="frame" x="42" y="291" width="330" height="214"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWW-SJ-vfv" userLabel="TextFields Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="330" height="85"/>
@@ -37,8 +37,8 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="qkS-2t-7cb" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="0.0" y="128" width="330" height="98"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qkS-2t-7cb" userLabel="Buttons Stack View">
+                                        <rect key="frame" x="0.0" y="128" width="330" height="86"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYs-Bc-9nI">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="48"/>
@@ -49,8 +49,8 @@
                                                     <segue destination="6uP-V2-cP9" kind="presentation" modalPresentationStyle="fullScreen" id="DTU-08-WbH"/>
                                                 </connections>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="vjq-om-UNH" userLabel="MiniButtons Stack View">
-                                                <rect key="frame" x="0.0" y="70" width="330" height="28"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vjq-om-UNH" userLabel="MiniButtons Stack View">
+                                                <rect key="frame" x="0.0" y="58" width="330" height="28"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Qo-3g8">
                                                         <rect key="frame" x="0.0" y="0.0" width="112" height="28"/>
@@ -61,7 +61,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrH-4h-9VQ">
-                                                        <rect key="frame" x="164" y="0.0" width="166" height="28"/>
+                                                        <rect key="frame" x="122" y="0.0" width="208" height="28"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <state key="normal" title="Forgot Password?"/>
                                                         <connections>
@@ -78,7 +78,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
-                            <constraint firstItem="BOZ-Ka-0PF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="85y-Qe-I32"/>
+                            <constraint firstItem="BOZ-Ka-0PF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="85y-Qe-I32"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOZ-Ka-0PF" secondAttribute="trailing" constant="42" id="E2P-ac-pDq"/>
                             <constraint firstItem="BOZ-Ka-0PF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="NPf-ZZ-i3U"/>
                             <constraint firstItem="BOZ-Ka-0PF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a3T-wX-1HD"/>
