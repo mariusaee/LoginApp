@@ -9,9 +9,17 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    // MARK: - IB Outlets
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    // MARK: - Override Methods
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+        welcomeVC.username = usernameTextField.text
+    }
+    
+    // MARK: - IB Actions
     @IBAction func unwind(segue: UIStoryboardSegue) {
         usernameTextField.text = ""
         passwordTextField.text = ""
@@ -28,11 +36,6 @@ class LoginViewController: UIViewController {
     @IBAction func logInPressed() {
 //        showAlert(with: "Failed", and: "Wrong Username or Password")
 //        self.passwordTextField.text = ""
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.username = usernameTextField.text
     }
 }
 
