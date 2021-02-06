@@ -19,6 +19,12 @@ class LoginViewController: UIViewController {
         welcomeVC.username = usernameTextField.text
     }
     
+    // Метод для скрытия клавиатуры тапом по экрану
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
     // MARK: - IB Actions
     @IBAction func unwind(segue: UIStoryboardSegue) {
         usernameTextField.text = ""
@@ -37,6 +43,7 @@ class LoginViewController: UIViewController {
 //        showAlert(with: "Failed", and: "Wrong Username or Password")
 //        self.passwordTextField.text = ""
     }
+    
 }
 
 // MARK: - Alert Controller
