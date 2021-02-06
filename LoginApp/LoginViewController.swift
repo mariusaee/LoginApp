@@ -13,6 +13,10 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    // MARK: - Private Properties
+    private var username = "Username"
+    private var password = "Password"
+    
     // MARK: - Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
@@ -32,11 +36,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotUsernamePressed() {
-        showAlert(with: "Here is your username:", and: "Username")
+        showAlert(with: "Here is your username:", and: "\(username)")
     }
     
     @IBAction func forgotPasswordPressed() {
-        showAlert(with: "Here is your password:", and: "Password")
+        showAlert(with: "Here is your password:", and: "\(password)")
     }
     
     @IBAction func logInPressed() {
