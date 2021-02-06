@@ -42,8 +42,8 @@
 		296637FF25CD99CE0055839A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				29A2EBF725CAE98C004B01A6 /* WelcomeViewController.swift */,
 				29A2EBF425CAE97C004B01A6 /* LoginViewController.swift */,
+				29A2EBF725CAE98C004B01A6 /* WelcomeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";

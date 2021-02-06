@@ -14,25 +14,29 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private Properties
-    private var username = "Username"
-    private var password = "Password"
+    private let username = "1"
+    private let password = "1"
     
-    // MARK: - Override Methods
+    // MARK: - Navigation and Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.username = usernameTextField.text
+        welcomeVC.username = username
     }
     
-    // Метод для скрытия клавиатуры тапом по экрану
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
     // MARK: - IB Actions
-    @IBAction func unwind(segue: UIStoryboardSegue) {
-        usernameTextField.text = ""
-        passwordTextField.text = ""
+    @IBAction func logInPressed() {
+        if usernameTextField.text == username && passwordTextField.text == password {
+            return
+                performSegue(withIdentifier: "showWelcomeVC" , sender: nil)
+        } else {
+            showAlert(with: "Failed", and: "Wrong Username or Password")
+            self.passwordTextField.text = ""
+        }
     }
     
     @IBAction func forgotUsernamePressed() {
@@ -43,11 +47,10 @@ class LoginViewController: UIViewController {
         showAlert(with: "Here is your password:", and: "\(password)")
     }
     
-    @IBAction func logInPressed() {
-//        showAlert(with: "Failed", and: "Wrong Username or Password")
-//        self.passwordTextField.text = ""
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        usernameTextField.text = ""
+        passwordTextField.text = ""
     }
-    
 }
 
 // MARK: - Alert Controller
@@ -58,5 +61,15 @@ extension LoginViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-    
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else {
+            logInPressed()
+        }
+        return true
+    }
 }

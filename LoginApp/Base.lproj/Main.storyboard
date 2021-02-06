@@ -26,13 +26,16 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="p0l-8C-kii"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCn-Nb-ch7">
                                                 <rect key="frame" x="0.0" y="51" width="240" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
-                                                    <action selector="passwordTextField" destination="BYZ-38-t0r" eventType="editingDidEnd" id="kSH-Z7-yjg"/>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="dzL-Ip-CR8"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -46,7 +49,7 @@
                                                 <state key="normal" title="Log in"/>
                                                 <connections>
                                                     <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="XOz-I4-D6H"/>
-                                                    <segue destination="6uP-V2-cP9" kind="presentation" modalPresentationStyle="fullScreen" id="DTU-08-WbH"/>
+                                                    <segue destination="6uP-V2-cP9" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="DTU-08-WbH"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vjq-om-UNH" userLabel="MiniButtons Stack View">
