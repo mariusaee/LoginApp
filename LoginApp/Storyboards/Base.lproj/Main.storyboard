@@ -23,6 +23,9 @@
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E01-Hd-zPu">
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                                <color key="backgroundColor" red="0.96663588290000002" green="0.87877362969999995" blue="0.83094257120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.081402651970000003" green="0.53640323879999996" blue="0.72226697210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.081402651970000003" green="0.53640323879999996" blue="0.72226697210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                 <connections>
@@ -31,6 +34,9 @@
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCn-Nb-ch7">
                                                 <rect key="frame" x="0.0" y="51" width="240" height="34"/>
+                                                <color key="backgroundColor" red="0.96663588290000002" green="0.87877362969999995" blue="0.83094257120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.081402651970000003" green="0.53640323879999996" blue="0.72226697210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.081402651970000003" green="0.53640323879999996" blue="0.72226697210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -60,7 +66,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="113" height="27"/>
                                                         <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="13"/>
                                                         <state key="normal" title="Forgot Username?">
-                                                            <color key="titleColor" red="0.98993748429999995" green="0.37789058689999999" blue="0.038164537399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.033475790169999999" green="0.15718159079999999" blue="0.20412626859999999" alpha="0.59154010292710058" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="forgotUsernamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qpz-5D-knE"/>
@@ -70,7 +76,7 @@
                                                         <rect key="frame" x="123" y="0.0" width="108" height="27"/>
                                                         <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="13"/>
                                                         <state key="normal" title="Forgot Password?">
-                                                            <color key="titleColor" red="0.98993748429999995" green="0.37789058689999999" blue="0.038164537399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" red="0.033475790169999999" green="0.15718159079999999" blue="0.20412626859999999" alpha="0.59154010292710058" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
                                                         <connections>
                                                             <action selector="forgotPasswordPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3V-QZ-67V"/>
@@ -116,11 +122,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCL-79-s4A">
-                                <rect key="frame" x="127.5" y="436" width="65" height="32"/>
+                                <rect key="frame" x="115" y="436" width="90" height="32"/>
                                 <color key="backgroundColor" red="0.96663588290000002" green="0.87877362969999995" blue="0.83094257120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="2Hs-qX-uFQ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="17"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="0.033475790169999999" green="0.15718159079999999" blue="0.20412626859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.033475790169999999" green="0.15718159079999999" blue="0.20412626859999999" alpha="0.75223374524653353" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="MKM-rZ-bnU" kind="unwind" unwindAction="unwindWithSegue:" id="F6p-Bg-qsW"/>
