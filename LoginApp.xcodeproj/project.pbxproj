@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2966381625D030DC0055839A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2966381525D030DC0055839A /* Data.swift */; };
+		296A51E325D066E4001BE62B /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A51E225D066E4001BE62B /* AboutMeViewController.swift */; };
 		29A2EBD125CAE5B1004B01A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2EBD025CAE5B1004B01A6 /* AppDelegate.swift */; };
 		29A2EBD325CAE5B1004B01A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A2EBD225CAE5B1004B01A6 /* SceneDelegate.swift */; };
 		29A2EBD825CAE5B1004B01A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A2EBD625CAE5B1004B01A6 /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2966381525D030DC0055839A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		296A51E225D066E4001BE62B /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AboutMeViewController.swift; path = LoginApp/ViewControllers/AboutMeViewController.swift; sourceTree = SOURCE_ROOT; };
 		29A2EBCD25CAE5B1004B01A6 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A2EBD025CAE5B1004B01A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29A2EBD225CAE5B1004B01A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			children = (
 				29A2EBF425CAE97C004B01A6 /* LoginViewController.swift */,
 				29A2EBF725CAE98C004B01A6 /* WelcomeViewController.swift */,
+				296A51E225D066E4001BE62B /* AboutMeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -61,6 +66,7 @@
 		2966381125D02C490055839A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2966381525D030DC0055839A /* Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,8 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				29A2EBF525CAE97C004B01A6 /* LoginViewController.swift in Sources */,
+				2966381625D030DC0055839A /* Data.swift in Sources */,
 				29A2EBF825CAE98C004B01A6 /* WelcomeViewController.swift in Sources */,
 				29A2EBD125CAE5B1004B01A6 /* AppDelegate.swift in Sources */,
+				296A51E325D066E4001BE62B /* AboutMeViewController.swift in Sources */,
 				29A2EBD325CAE5B1004B01A6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

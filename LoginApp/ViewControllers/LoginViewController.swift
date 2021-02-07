@@ -14,13 +14,11 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTextField: UITextField!
     
     // MARK: - Private Properties
-    private let username = "1"
-    private let password = "1"
     
     // MARK: - Navigation and Override Methods
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.username = username
+//        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+//        welcomeVC.username = username
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -36,7 +34,7 @@ class LoginViewController: UIViewController {
     @IBAction func logInPressed() {
         if usernameTextField.text == username && passwordTextField.text == password {
             return
-                performSegue(withIdentifier: "showWelcomeVC" , sender: nil)
+//                performSegue(withIdentifier: "showWelcomeVC" , sender: nil)
         } else {
             showAlert(with: "Failed ☹️", and: "Wrong Username or Password")
             self.passwordTextField.text = ""

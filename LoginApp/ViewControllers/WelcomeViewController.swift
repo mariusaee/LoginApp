@@ -20,7 +20,7 @@ class WelcomeViewController: UIViewController {
     // MARK: -  Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeMessageLabel.text = "Welcome " + username + "!"
+//        welcomeMessageLabel.text = "Welcome " + username + "!"
         logOutButton.layer.cornerRadius = 5
     }
 }
