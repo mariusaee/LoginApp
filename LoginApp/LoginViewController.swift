@@ -28,23 +28,27 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     // MARK: - IB Actions
     @IBAction func logInPressed() {
         if usernameTextField.text == username && passwordTextField.text == password {
             return
                 performSegue(withIdentifier: "showWelcomeVC" , sender: nil)
         } else {
-            showAlert(with: "Failed", and: "Wrong Username or Password")
+            showAlert(with: "Failed ☹️", and: "Wrong Username or Password")
             self.passwordTextField.text = ""
         }
     }
     
     @IBAction func forgotUsernamePressed() {
-        showAlert(with: "Here is your username:", and: "\(username)")
+        showAlert(with: "Here is your username: 🙂", and: "\(username)")
     }
     
     @IBAction func forgotPasswordPressed() {
-        showAlert(with: "Here is your password:", and: "\(password)")
+        showAlert(with: "Here is your password: 🙃", and: "\(password)")
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
@@ -71,5 +75,18 @@ extension LoginViewController: UITextFieldDelegate {
             logInPressed()
         }
         return true
+    }
+}
+
+// MARK: - Set background color
+extension UIView {
+    func addVerticalGradientLayer(topColor: UIColor, bottomColor: UIColor) {
+        let gradient = CAGradientLayer()
+        gradient.frame = bounds
+        gradient.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradient.locations = [0.0, 1.0]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 0, y: 1)
+        layer.insertSublayer(gradient, at: 0)
     }
 }

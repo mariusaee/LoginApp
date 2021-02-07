@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="BOZ-Ka-0PF" userLabel="All Stack View">
-                                <rect key="frame" x="40" y="127" width="240" height="214"/>
+                                <rect key="frame" x="40" y="122" width="240" height="224"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWW-SJ-vfv" userLabel="TextFields Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="85"/>
@@ -41,32 +40,38 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qkS-2t-7cb" userLabel="Buttons Stack View">
-                                        <rect key="frame" x="0.0" y="128" width="240" height="86"/>
+                                        <rect key="frame" x="0.0" y="128" width="240" height="96"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYs-Bc-9nI">
-                                                <rect key="frame" x="80.5" y="0.0" width="79" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Log in"/>
+                                                <rect key="frame" x="61.5" y="0.0" width="117" height="59"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="40"/>
+                                                <state key="normal" title="Log in">
+                                                    <color key="titleColor" red="0.98993748429999995" green="0.37789058689999999" blue="0.038164537399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="XOz-I4-D6H"/>
                                                     <segue destination="6uP-V2-cP9" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="DTU-08-WbH"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vjq-om-UNH" userLabel="MiniButtons Stack View">
-                                                <rect key="frame" x="4.5" y="58" width="231" height="28"/>
+                                                <rect key="frame" x="4.5" y="69" width="231" height="27"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC1-Qo-3g8">
-                                                        <rect key="frame" x="0.0" y="0.0" width="112" height="28"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                        <state key="normal" title="Forgot Username?"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="113" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="13"/>
+                                                        <state key="normal" title="Forgot Username?">
+                                                            <color key="titleColor" red="0.98993748429999995" green="0.37789058689999999" blue="0.038164537399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="forgotUsernamePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qpz-5D-knE"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrH-4h-9VQ">
-                                                        <rect key="frame" x="122" y="0.0" width="109" height="28"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                        <state key="normal" title="Forgot Password?"/>
+                                                        <rect key="frame" x="123" y="0.0" width="108" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="13"/>
+                                                        <state key="normal" title="Forgot Password?">
+                                                            <color key="titleColor" red="0.98993748429999995" green="0.37789058689999999" blue="0.038164537399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="forgotPasswordPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="C3V-QZ-67V"/>
                                                         </connections>
@@ -79,7 +84,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <color key="backgroundColor" red="0.20378798249999999" green="0.48313683270000002" blue="0.59657233949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BOZ-Ka-0PF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="85y-Qe-I32"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOZ-Ka-0PF" secondAttribute="trailing" constant="40" id="E2P-ac-pDq"/>
@@ -104,56 +109,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGc-1i-UmK">
-                                <rect key="frame" x="42" y="150" width="236" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome username" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGc-1i-UmK">
+                                <rect key="frame" x="42" y="150" width="236" height="69.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
+                                <color key="textColor" red="0.98993748429999995" green="0.37789058689999999" blue="0.038164537399999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCL-79-s4A">
-                                <rect key="frame" x="115" y="424" width="90" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <rect key="frame" x="127.5" y="436" width="65" height="32"/>
+                                <color key="backgroundColor" red="0.96663588290000002" green="0.87877362969999995" blue="0.83094257120000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="17"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                    <color key="titleColor" red="0.033475790169999999" green="0.15718159079999999" blue="0.20412626859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="MKM-rZ-bnU" kind="unwind" unwindAction="unwindWithSegue:" id="F6p-Bg-qsW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2o-Sw-Scj">
+                                <rect key="frame" x="128.5" y="249.5" width="63" height="69.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fe5-Za-u4U"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" red="0.20378798249999999" green="0.48313683270000002" blue="0.59657233949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="w2o-Sw-Scj" firstAttribute="centerX" secondItem="sme-Pg-dmv" secondAttribute="centerX" id="ElN-sp-U9x"/>
                             <constraint firstItem="hGc-1i-UmK" firstAttribute="top" secondItem="fe5-Za-u4U" secondAttribute="top" constant="150" id="L40-iG-OrF"/>
                             <constraint firstItem="hGc-1i-UmK" firstAttribute="leading" secondItem="fe5-Za-u4U" secondAttribute="leading" constant="42" id="LBZ-0a-pPX"/>
                             <constraint firstItem="fe5-Za-u4U" firstAttribute="bottom" secondItem="nCL-79-s4A" secondAttribute="bottom" constant="100" id="OtU-6g-TYk"/>
                             <constraint firstItem="nCL-79-s4A" firstAttribute="centerX" secondItem="sme-Pg-dmv" secondAttribute="centerX" id="Y1s-dV-rU0"/>
+                            <constraint firstItem="w2o-Sw-Scj" firstAttribute="centerY" secondItem="sme-Pg-dmv" secondAttribute="centerY" id="dpK-52-Hqo"/>
                             <constraint firstItem="fe5-Za-u4U" firstAttribute="trailing" secondItem="hGc-1i-UmK" secondAttribute="trailing" constant="42" id="hRj-CD-3EQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tMz-3S-5nS"/>
                     <connections>
+                        <outlet property="logOutButton" destination="nCL-79-s4A" id="6dJ-1b-4Aa"/>
                         <outlet property="welcomeMessageLabel" destination="hGc-1i-UmK" id="gTw-ap-tQe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pk2-IY-TEo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="MKM-rZ-bnU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="713" y="110"/>
+            <point key="canvasLocation" x="712.5" y="109.85915492957747"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
