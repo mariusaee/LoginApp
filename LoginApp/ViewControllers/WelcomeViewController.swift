@@ -13,14 +13,14 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var logOutButton: UIButton!
     
     // MARK: - Public Properties
-    var username: String!
+    var user: User!
     
     // MARK: - Private properties
     
     // MARK: -  Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-//        welcomeMessageLabel.text = "Welcome " + username + "!"
+        welcomeMessageLabel.text = "Welcome " + user.username + "!"
         logOutButton.layer.cornerRadius = 5
     }
 }

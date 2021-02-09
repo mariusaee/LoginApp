@@ -57,7 +57,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="logInPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="XOz-I4-D6H"/>
-                                                    <segue destination="9u1-9V-pMu" kind="presentation" modalPresentationStyle="fullScreen" id="8GX-8v-54Y"/>
+                                                    <segue destination="9u1-9V-pMu" kind="presentation" identifier="logInSegue" modalPresentationStyle="fullScreen" id="8GX-8v-54Y"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vjq-om-UNH" userLabel="MiniButtons Stack View">
@@ -202,7 +202,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Rkc-Fr-6As">
             <objects>
-                <tabBarController id="9u1-9V-pMu" customClass="tabBarController" sceneMemberID="viewController">
+                <tabBarController id="9u1-9V-pMu" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="On9-TY-5oK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

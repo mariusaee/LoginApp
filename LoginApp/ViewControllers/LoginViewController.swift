@@ -12,26 +12,17 @@ class LoginViewController: UIViewController {
     // MARK: - IB Outlets
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
-    
-    var viewControllers = [ WelcomeViewController(), AboutMeViewController() ]
-    
+
     // MARK: - Private Properties
+    private let user = User.gerUserData()
     
     // MARK: - Navigation and Override Methods
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-    //        welcomeVC.username = username
-    //    }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let tabBarController = segue.destination as! UITabBarController
-//        for viewController in viewControllers {
-//            if viewController is WelcomeViewController {
-//                guard segue.destination is WelcomeViewController else { return }
-//            }
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tabBarController = segue.destination as? UITabBarController
+        let welcomeVC = tabBarController?.viewControllers?.first as! WelcomeViewController
+        welcomeVC.user = user
+        }
 
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
@@ -43,9 +34,9 @@ class LoginViewController: UIViewController {
     
     // MARK: - IB Actions
     @IBAction func logInPressed() {
-        if usernameTextField.text == username && passwordTextField.text == password {
+        if usernameTextField.text == user.username && passwordTextField.text == user.password {
             return
-//                performSegue(withIdentifier: "showWelcomeVC" , sender: nil)
+                performSegue(withIdentifier: "logInSegue" , sender: nil)
         } else {
             showAlert(with: "Failed ☹️", and: "Wrong Username or Password")
             self.passwordTextField.text = ""
@@ -53,11 +44,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotUsernamePressed() {
-        showAlert(with: "Here is your username: 🙂", and: "\(username)")
+        showAlert(with: "Here is your username: 🙂", and: "\(user.username)")
     }
     
     @IBAction func forgotPasswordPressed() {
-        showAlert(with: "Here is your password: 🙃", and: "\(password)")
+        showAlert(with: "Here is your password: 🙃", and: "\(user.password)")
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) {
