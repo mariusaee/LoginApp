@@ -7,5 +7,11 @@
 
 import Foundation
 
-let username = "1"
-let password = "1"
+struct User {
+    let username: String
+    let password: String
+    
+    static func gerUserData() -> User {
+        User(username: "1", password: "1")
+    }
+}

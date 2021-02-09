@@ -13,13 +13,24 @@ class LoginViewController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    var viewControllers = [ WelcomeViewController(), AboutMeViewController() ]
+    
     // MARK: - Private Properties
     
     // MARK: - Navigation and Override Methods
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-//        welcomeVC.username = username
-    }
+    //        welcomeVC.username = username
+    //    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let tabBarController = segue.destination as! UITabBarController
+//        for viewController in viewControllers {
+//            if viewController is WelcomeViewController {
+//                guard segue.destination is WelcomeViewController else { return }
+//            }
+//        }
+//    }
+
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
